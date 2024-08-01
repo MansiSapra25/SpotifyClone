@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+    <div class="mainbody">
+        <div class="container  display-align-justify">
+            <div class="left br">
+                <div class="home bgcolor br display-align-justify">
+                    <ul>
+                        <li class="display-align-justify"><img id="logo" class="logo" src="logo/image.png"
+                                alt="Spotify"></li>
+                        <li class="display-align-justify"><img src="Assets/home.svg" alt="home"><a>Home</span></li>
+                        <li class="display-align-justify"><img src="Assets/search.svg" alt="search"><a>Search</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="library br bgcolor">
+                    <div class="libheader br bgcolor">
+                        <ul>
+                            <li><img id="library" src="yourlibrary.png" alt="Your Library"><span>Your
+                                    Library</span></li>
+                        </ul>
+                    </div>
+                    <div class="all-songs br ">
+                        <div class="title br ">
+                            <ul>
+                                <li class="display-align-justify ">
+                                    <h3>Play All Songs</h3>
+                                    <button id="play-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black"
+                                            viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </button>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- <div class="songs border">
+                            <ul id="all-songs-list"></ul> List of all songs 
+                        </div>   -->
+
+                    </div>
+                    <!-- <div class="albumsongs border"> -->
+                    <ul id="playlist"></ul> <!-- List of songs in the current album -->
+                    <!-- </div> -->
+
+                    <div class="footer br display-align-justify">
+                        <div class="links">
+                            <a href="#">Legal</a>
+                            <a href="#">Safety&PrivacyCenter</a>
+                            <a href="#">PrivacyPolicy</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">About Ads</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right br bgcolor ">
+                <div class="header  ">
+                    <div class="rightheader ">
+                        <div class="header  display-align-justify">
+                            <div class="headerbtn display-align-justify margin5">
+                                <div class="btn"><img src="Assets/left_arrow.svg" alt="left arrow"></div>
+                                <div class="btn"><img src="Assets/right_arrow.svg" alt=""></div>
+                            </div>
+                            <div class="btn display-align-justify margin5">
+                                <a href="#" class="signup btn">Sign Up</a>
+                                <button class="login btn">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="albums br">
+                    <h2>Albums</h2>
+                    <button id="show-all-songs"> All Songs</button>
+                    <!-- Button to display all songsButton to play all songs sequentially -->
+                    
+                    <ul id="album-list"></ul> <!-- List of albums -->
+
+                </div>
+                <div class="playbar   ">
+                    <div class="player ">
+                        <h2 id="album-title">Now Playing</h2> 
+                        <div class="player-content ">
+                            
+                            <div class="album-info ">
+                                <img id="album-image" src="" alt="Album Image"> <!-- Album image -->
+                                <h3 id="artist-name"></h3> <!-- Artist name -->
+                            </div>
+                            <div class="song-info ">
+                               <!--  <img id="song-image" src="" alt="Song Image"> Song image -->
+                                <span id="song-title"></span> <!-- Currently playing song title -->
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div id="controls" class="bgcolor">
+                            <div class="button-group">
+                                <button id="previous"><img src="Assets/previousbtn.svg" alt=""></button> <!-- Button to load previous song -->
+                              <button id="backward-10">-10s</button>  <!--  Button to go back 10 seconds -->
+                                <button id="play-pause"><img src="Assets/play_circle.svg" alt=""></button> <!-- Button to play or pause the song -->
+                                <button id="forward-10">+10s</button> <!-- Button to go forward 10 seconds -->
+                                <button id="next"><img src="Assets/next_btn.svg" alt=""></button> <!-- Button to load next song -->
+                                <button id="shuffle"><img src="Assets/shuffle.svg" alt=""></button> <!-- Button for shuffle play -->
+                                <button id="volume-button" class="volume-button">volume</button>
+                                <!-- Button for volume control -->
+                                <input type="range" id="volume-bar" value="100" min="0" max="100">
+                                <!-- Volume control slider -->
+                            </div>
+                           
+                            
+                            <div class="seekbar">
+                                <input type="range" id="seek-bar" value="0" min="0" step="1"> <!-- Seek bar for song -->
+                            <span id="current-time"></span> <!-- Current time of the song -->
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
